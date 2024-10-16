@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- id/ -->
+ <h1 id="head">hello guys</h1>
+ <h1>hello world</h1>
+ <ul>
+    <li>milk</li>
+    <li>cheese</li>
+    <li>butter</li>
+ </ul>
+ <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, esse! Aliquam temporibus molestiae tempora pariatur ducimus, ipsum ad repudiandae sapiente dignissimos magnam dicta ab repellendus odit unde. Ex, incidunt qui.</p>
+ <p class="para">paragraph2</p>
+ <script>
+    const headingelement=document.getElementById("head")
+    console.log(headingelement)
+    headingelement.innerHTML="hello javascript"
+    headingelement.style.color="red"
+    let heading=document.getElementsByTagName("h1")
+console.log(heading)
+heading[1].innerHTML="hello everyone";
+ let listitems=document.getElementsByTagName("li")
+ for(i=0; i<listitems.length;i++){
+    console.log(listitems[i].textContent)
+ }
+ const paragraph=document.getElementsByClassName("para")
+ console.log(paragraph)
+ paragraph[0].style.color="green"
+ paragraph[0].style.fontStyle="italic"
+ for(i=0; i<paragraph.length;i++){
+    //paragraph[i].innerHTML="helloo"//
+ }
+ const heading1=document.querySelectorAll(".para")
+ console.log(heading1)
+ const heading2=document.querySelector(".para")
+ console.log(heading2)
+ const allitems=document.querySelectorAll("li")
+  allitems.forEach(items){
+console.log(items.textContent)
+  }
+ </script>
+</body>
+</html>

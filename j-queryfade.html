@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+#div1{
+    background-color: aqua;
+    border: 1px solid black;
+    height: 150px;
+    width:150px
+
+}
+#div2{
+    background-color: brown;
+    border: 1px solid black;
+    height: 200px;
+}
+    </style>
+</head>
+<body>
+    <button id="div1">click</button>
+    <div id="div2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa est iusto deleniti veniam animi sed, in ipsam modi, nobis impedit hic odio accusantium sint consequatur explicabo saepe amet, soluta dolorem!</div>
+    <script>
+    $(document).ready(function(){
+        // $("#div1").click (function(){
+        //     $("#div2").fadeOut()
+        // })
+        // $("#div1").click(function(){
+        //     $("#div2").fadeIn()
+        // })
+        // $("#div1").click(function(){
+        //     $("#div2").fadeToggle()
+        // })
+        $("#div1").click(function(){
+            $("#div2").fadeTo("slow",0.5)
+        })
+    })
+    </script>
+</body>
+</html>

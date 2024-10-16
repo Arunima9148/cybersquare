@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+    <h1>what to buy</h1>
+    <p title="a gentle reminder"> don't forget to buy this stuff</p>
+    <ul id="purchase">
+    <li>A tin of beans</li>
+    <li>cheese</li>
+    <li>milk</li>
+    </ul>
+</div>
+    <script>
+        const headingElement=document.querySelector("h1")
+        if(headingElement !==null){
+            console.log("nodeType:",headingElement.nodeType);
+            console.log("nodeName:",headingElement.nodeName);
+            console.log("nodeValue:",headingElement.nodeValue);
+        }
+        const  paragraphelement=document.querySelector("p")
+        const textNode = paragraphelement.firstChild
+        if(textNode !==null){
+            console.log("nodeType:",textNode.nodeType);
+            console.log("nodeName:",textNode.nodeName);
+            console.log("nodeValue:",textNode.nodeValue);
+
+        }
+        const parentElement=document.getElementById("parent")
+        console.log("parent node:",paragraphelement);
+        console.log("parentNode:",parentElement.parentNode);
+        const ListparentElement=document.getElementById("parent");
+        const children=ListparentElement.children;
+console.log("parent Elements:",children)
+
+const firstChild=parentElement.firstChild;
+console.log("first child:",firstChild);
+        </script>
+</body>
+</html>

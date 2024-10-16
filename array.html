@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const number=[1,2,3,4,5]
+        console.log(number.length)
+        number.push(6);
+        console.log(number)
+        const removedElement=number.pop();
+        document.write(removedElement)
+        document.write("<br>")
+        const removeFirstelement=number.shift()
+        document.write(removeFirstelement)
+        number.unshift(6)
+        document.write(number)
+        document.write(number.indexOf(3))
+        document.write("<br>")
+        number.splice(2,3,4,5)
+        document.write(number)
+    </Script>
+</body>
+</html>

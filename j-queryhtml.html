@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+        .addclass{
+            color: blue;
+            font-size: 15px;
+            background-color: blanchedalmond;
+            
+        }
+    </style>
+</head>
+<body>
+    <p id="p1"><b>this is a example of paragraph</b></p>
+    <h1>jgff</h1>
+    <div style="border: 1px solid black; background-color: beige;">
+        <ul>
+        <li>apple</li>
+        <li>orange</li>
+        <li>mango</li>
+        <li>strawberry</li>
+    </ul>
+</div>
+<p>this is a paragraph</p>
+<h1>heading</h1>
+<div>this is div</div>
+<button >click</button>
+    <script>
+        $(document).ready(function(){
+           console.log( $("#p1").html())
+           console.log( $("#p1").text())
+           $('#p1').css({"color":"blue","font-size":"40px"})
+           $("#p1").html("helloooooooo")
+           $("#p1").text("hai everyone...")
+    //j-query-html -remove// element remove   
+        // $("#p1").remove()
+        // $("h1").remove()
+        //$("ul").empty()//child remove
+    $("button").click(function (){
+        $("p,h1,div").addClass("addclass")
+    })   
+           
+        })
+    </script>
+</body>
+</html>

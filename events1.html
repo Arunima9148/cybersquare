@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="click" onClick="handleclick()">clicked</button>
+    <script>
+    //    let btn=document.getElementById("click")
+    //    btn.addEventListener("mouseover",handleclick)
+    //    function handleclick(){
+    //     alert("mouseover")
+    //    }
+    //    btn.removeEventListener("mouseover",handleclick)
+let btn=document.getElementById("click")
+btn.onclick=()=>{
+    console.log("button clicked")
+}
+function handleclick(){
+    alert("alert is clicked")
+}
+    </script>
+</body>
+</html>

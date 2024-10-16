@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mystyle{
+            background-color: blue;
+            padding: 16px;
+        }
+        .myclass{
+            background-color: black;
+            padding: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>the DOMtoken object</h1>
+    <h2>the add()Method </h2>
+    <button onClick="myfunction()">Add</button>
+    <button onclick="myfunction1()">remove</button>
+    <p>Click "Add" to add the "myStyle" class to myDiv</p>
+    <div id="myDiv" class="myclass">
+        <p>I Am MyDiv.</p>
+    </div>
+    <Script>
+        function myfunction()
+            {
+const list=document.getElementById("myDiv").classList;
+list.add("mystyle");
+
+        }
+        function myfunction1()
+            {
+                const div=document.getElementById("myDiv").classList
+                div.remove("myclass")
+            }
+        
+    </Script>
+</body>
+</html>

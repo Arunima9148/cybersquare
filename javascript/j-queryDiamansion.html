@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+#div1{
+   width:150px;
+   height: 150px;
+   margin: 2px;
+   padding: 10px;
+   background-color: aqua;
+}
+#btn{
+    background-color: black;
+    color: white;
+}
+ .addclass{
+    width:150px;
+   height: 150px;
+   margin: 2px;
+   padding: 10px;
+   background-color: aqua;
+ }
+    </style>
+
+</head>
+<body>
+    <div id="div1"></div>
+    <p id="p"></p>
+    <button id="btn">clickhere</button>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+              let x=  $("#div1").width(400)
+              $("#p").text("width:"+x)
+            // $("#div1").addClass("addclass")
+            let y=$("#div1").height(400)
+            $("#p").text("height:"+y)
+            console.log(y)
+            let x1=$("#div1").innerWidth(100)
+            $("#p").text("innerwidth:"+x1)
+            let x2=$("#div1").innerHeight(100)
+            $("#p").text("innerheight:"+x2)
+
+          console.log(x1)
+            })
+        })
+    </script>
+</body>
+</html>
